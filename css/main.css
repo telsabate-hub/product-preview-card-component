@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50rem;
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
+  padding: 1.875rem;
+}
+article h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+}

@@ -1,0 +1,26 @@
+$primary-color1: hsl(158, 36%, 37%);
+$primary-color2: hsl(30, 38%, 92%);
+$neutral-color1: hsl(212, 21%, 14%);
+$neutral-color2: hsl(228, 12%, 48%);
+$neutral-color3: hsl(0, 0%, 100%);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin centerContent(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin montserrat(){
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: .875rem;
+    color: $neutral-color2;
+}

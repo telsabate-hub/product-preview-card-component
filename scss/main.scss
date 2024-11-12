@@ -1,0 +1,24 @@
+@import './config';
+
+body {
+    @include centerContent();
+
+    background-color: $primary-color2;
+    height: 100vh;
+}
+
+article {
+    @include centerContent();
+
+    max-width: 50rem;
+    background-color: $neutral-color3;
+    margin: auto;
+    padding: 1.875rem;
+
+    h2 {
+        @include montserrat();
+
+        text-transform: uppercase;
+        letter-spacing: .3125rem;
+    }
+}
