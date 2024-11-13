@@ -10,17 +10,28 @@ $neutral-color3: hsl(0, 0%, 100%);
     padding: 0;
 }
 
-@mixin centerContent(){
+@mixin centerContentVertically(){
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-@mixin montserrat(){
+@mixin priceLayout(){
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+@mixin montserrat($size){
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
-    font-size: .875rem;
     color: $neutral-color2;
+    font-size: $size;
+}
+
+@mixin fraunces($size, $color){
+    font-family: "Fraunces", serif;
+    font-size: $size;
+    color: $color;
+    line-height: 1;
 }

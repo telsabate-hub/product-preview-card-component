@@ -8,6 +8,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
   background-color: hsl(30, 38%, 92%);
   height: 100vh;
 }
@@ -16,18 +20,45 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 50rem;
+  max-width: 20rem;
   background-color: hsl(0, 0%, 100%);
   margin: auto;
   padding: 1.875rem;
 }
 article h2 {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
-  font-size: 0.875rem;
   color: hsl(228, 12%, 48%);
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.3125rem;
+}
+article h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.25rem;
+  color: hsl(212, 21%, 14%);
+  line-height: 1;
+  padding: 1.25rem 0;
+}
+article p {
+  line-height: 1.5;
+}
+article .price {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  font-family: "Fraunces", serif;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1;
+  padding: 1.25rem 0;
+}
+article .price strong {
+  font-family: "Fraunces", serif;
+  font-size: 2.25rem;
+  color: hsl(158, 36%, 37%);
+  line-height: 1;
+}
+article .price p {
+  text-decoration: line-through;
 }

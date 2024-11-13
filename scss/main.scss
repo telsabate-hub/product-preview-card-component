@@ -1,24 +1,50 @@
 @import './config';
 
 body {
-    @include centerContent();
+    @include centerContentVertically();
+    @include montserrat(.875rem);
 
     background-color: $primary-color2;
     height: 100vh;
 }
 
 article {
-    @include centerContent();
+    @include centerContentVertically();
 
-    max-width: 50rem;
+    max-width: 20rem;
     background-color: $neutral-color3;
     margin: auto;
     padding: 1.875rem;
 
     h2 {
-        @include montserrat();
+        @include montserrat(.75rem);
 
         text-transform: uppercase;
         letter-spacing: .3125rem;
+    }
+
+    h1 {
+        @include fraunces(2.25rem, $neutral-color1);
+
+        padding: 1.25rem 0;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    .price {
+        @include priceLayout();
+        @include fraunces(.875rem, $neutral-color2);
+
+        padding: 1.25rem 0;
+        
+        strong {
+            @include fraunces(2.25rem, $primary-color1);
+        }
+
+        p {
+            text-decoration: line-through;
+        }
     }
 }
