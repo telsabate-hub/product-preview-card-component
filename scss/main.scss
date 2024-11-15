@@ -16,20 +16,20 @@ article {
     margin: auto;
     padding: 1.875rem;
 
-    h2 {
+    .category {
         @include montserrat(.75rem);
 
         text-transform: uppercase;
         letter-spacing: .3125rem;
     }
 
-    h1 {
+    .product-name {
         @include fraunces(2.25rem, $neutral-color1);
 
         padding: 1.25rem 0;
     }
 
-    p {
+    .description {
         line-height: 1.5;
     }
 
@@ -37,14 +37,32 @@ article {
         @include priceLayout();
         @include fraunces(.875rem, $neutral-color2);
 
-        padding: 1.25rem 0;
+        padding: 1.875rem 0;
         
         strong {
             @include fraunces(2.25rem, $primary-color1);
         }
 
-        p {
+        .orig {
             text-decoration: line-through;
+        }
+    }
+
+    .add-btn {
+        background: $primary-color1;
+        text-align: center;
+        border-radius: .5rem;
+        padding: 1rem;
+        
+        a {
+            color: $neutral-color3;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        
+        i {
+            padding-right: .625rem;
+            vertical-align: middle;
         }
     }
 }

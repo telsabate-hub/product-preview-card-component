@@ -25,7 +25,7 @@ article {
   margin: auto;
   padding: 1.875rem;
 }
-article h2 {
+article .category {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
@@ -33,14 +33,14 @@ article h2 {
   text-transform: uppercase;
   letter-spacing: 0.3125rem;
 }
-article h1 {
+article .product-name {
   font-family: "Fraunces", serif;
   font-size: 2.25rem;
   color: hsl(212, 21%, 14%);
   line-height: 1;
   padding: 1.25rem 0;
 }
-article p {
+article .description {
   line-height: 1.5;
 }
 article .price {
@@ -51,7 +51,7 @@ article .price {
   font-size: 0.875rem;
   color: hsl(228, 12%, 48%);
   line-height: 1;
-  padding: 1.25rem 0;
+  padding: 1.875rem 0;
 }
 article .price strong {
   font-family: "Fraunces", serif;
@@ -59,6 +59,21 @@ article .price strong {
   color: hsl(158, 36%, 37%);
   line-height: 1;
 }
-article .price p {
+article .price .orig {
   text-decoration: line-through;
+}
+article .add-btn {
+  background: hsl(158, 36%, 37%);
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+article .add-btn a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  vertical-align: middle;
+}
+article .add-btn i {
+  padding-right: 0.625rem;
+  vertical-align: middle;
 }
