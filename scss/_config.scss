@@ -19,12 +19,12 @@ $neutral-color3: hsl(0, 0%, 100%);
 @mixin priceLayout(){
     display: flex;
     align-items: center;
-    gap: 1.875rem;
+    gap: 1.5em;
 }
 
-@mixin montserrat($size){
+@mixin montserrat($size, $weight){
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: $weight;
     color: $neutral-color2;
     font-size: $size;
 }

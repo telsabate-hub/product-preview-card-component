@@ -1,68 +1,10 @@
 @import './config';
+@import './product';
 
 body {
     @include centerContentVertically();
-    @include montserrat(.875rem);
+    @include montserrat(.875rem, 500);
 
     background-color: $primary-color2;
     height: 100vh;
-}
-
-article {
-    @include centerContentVertically();
-
-    max-width: 20rem;
-    background-color: $neutral-color3;
-    margin: auto;
-    padding: 1.875rem;
-
-    .category {
-        @include montserrat(.75rem);
-
-        text-transform: uppercase;
-        letter-spacing: .3125rem;
-    }
-
-    .product-name {
-        @include fraunces(2.25rem, $neutral-color1);
-
-        padding: 1.25rem 0;
-    }
-
-    .description {
-        line-height: 1.5;
-    }
-
-    .price {
-        @include priceLayout();
-        @include fraunces(.875rem, $neutral-color2);
-
-        padding: 1.875rem 0;
-        
-        strong {
-            @include fraunces(2.25rem, $primary-color1);
-        }
-
-        .orig {
-            text-decoration: line-through;
-        }
-    }
-
-    .add-btn {
-        background: $primary-color1;
-        text-align: center;
-        border-radius: .5rem;
-        padding: 1rem;
-        
-        a {
-            color: $neutral-color3;
-            text-decoration: none;
-            vertical-align: middle;
-        }
-        
-        i {
-            padding-right: .625rem;
-            vertical-align: middle;
-        }
-    }
 }

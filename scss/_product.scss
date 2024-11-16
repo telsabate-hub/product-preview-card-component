@@ -1,0 +1,71 @@
+.product {
+    display: flex;
+    justify-content: center;
+    max-width: 33rem;
+    height: 57vh;
+    margin: auto;
+
+    &-img {
+        border-radius: .5rem 0 0 .5rem;
+    }
+}
+
+.product-details {
+    @include centerContentVertically();
+
+    background-color: $neutral-color3;
+    padding: 1.875rem;
+    border-radius: 0 .5rem .5rem 0;
+
+    &-category {
+        @include montserrat(.75em, 500);
+
+        text-transform: uppercase;
+        letter-spacing: .3125em;
+    }
+
+    &-name {
+        @include fraunces(2em, $neutral-color1);
+
+        padding: 1.25rem 0;
+    }
+
+    &-description {
+        line-height: 1.5;
+        font-size: .875em;
+    }
+
+    &-price {
+        @include priceLayout();
+        @include fraunces(.875em, $neutral-color2);
+
+        padding: 1.875em 0;
+        
+        strong {
+            @include fraunces(2.25em, $primary-color1);
+        }
+
+        .orig {
+            text-decoration: line-through;
+        }
+    }
+
+    .add-btn {
+        background: $primary-color1;
+        text-align: center;
+        border-radius: .5em;
+        padding: .875em;
+        
+        a {
+            @include montserrat(.8125em, 700);
+
+            color: $neutral-color3;
+            text-decoration: none;
+        }
+        
+        i {
+            padding-right: .625rem;
+            vertical-align: middle;
+        }
+    }
+}
