@@ -80,11 +80,14 @@
   color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
+.product-details .add-btn a:focus {
+  outline: none;
+}
 .product-details .add-btn i {
   padding-right: 0.625rem;
   vertical-align: middle;
 }
-.product-details .add-btn:hover {
+.product-details .add-btn:hover, .product-details .add-btn:focus {
   background: hsl(158, 36%, 20%);
 }
 

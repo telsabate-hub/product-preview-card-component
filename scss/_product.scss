@@ -67,6 +67,10 @@
 
             color: $neutral-color3;
             text-decoration: none;
+
+            &:focus {
+                outline: none;
+            }
         }
         
         i {
@@ -74,7 +78,7 @@
             vertical-align: middle;
         }
 
-        &:hover {
+        &:hover, &:focus {
             background: $hover-color;
         }
     }
