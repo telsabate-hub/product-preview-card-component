@@ -32,13 +32,13 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
-  font-size: 0.75em;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.3125em;
+  letter-spacing: 0.375em;
 }
 .product-details-name {
   font-family: "Fraunces", serif;
-  font-size: 2em;
+  font-size: 2rem;
   color: hsl(212, 21%, 14%);
   line-height: 1;
   padding: 1.25rem 0;
@@ -50,16 +50,16 @@
 .product-details-price {
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 1.25em;
   font-family: "Fraunces", serif;
-  font-size: 0.875em;
+  font-size: 0.75rem;
   color: hsl(228, 12%, 48%);
   line-height: 1;
   padding: 1.875em 0;
 }
 .product-details-price strong {
   font-family: "Fraunces", serif;
-  font-size: 2.25em;
+  font-size: 1.75rem;
   color: hsl(158, 36%, 37%);
   line-height: 1;
 }
@@ -76,19 +76,22 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: hsl(228, 12%, 48%);
-  font-size: 0.8125em;
+  font-size: 0.8125rem;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
+}
+.product-details .add-btn a:focus {
+  outline: none;
 }
 .product-details .add-btn i {
   padding-right: 0.625rem;
   vertical-align: middle;
 }
-.product-details .add-btn:hover {
+.product-details .add-btn:hover, .product-details .add-btn:focus {
   background: hsl(158, 36%, 20%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .product {
     flex-direction: column;
     height: 100vh;
@@ -103,6 +106,9 @@
   }
   .product-details {
     border-radius: 0 0 0.5rem 0.5rem;
+  }
+  .product-details-description {
+    padding-right: 2.5em;
   }
 }
 body {

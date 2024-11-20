@@ -24,14 +24,14 @@
     border-radius: 0 .5rem .5rem 0;
 
     &-category {
-        @include montserrat(.75em, 500);
+        @include montserrat(.75rem, 500);
 
         text-transform: uppercase;
-        letter-spacing: .3125em;
+        letter-spacing: 0.375em;
     }
 
     &-name {
-        @include fraunces(2em, $neutral-color1);
+        @include fraunces(2rem, $neutral-color1);
 
         padding: 1.25rem 0;
     }
@@ -43,12 +43,12 @@
 
     &-price {
         @include priceLayout();
-        @include fraunces(.875em, $neutral-color2);
+        @include fraunces(.75rem, $neutral-color2);
 
         padding: 1.875em 0;
         
         strong {
-            @include fraunces(2.25em, $primary-color1);
+            @include fraunces(1.75rem, $primary-color1);
         }
 
         .orig {
@@ -63,10 +63,14 @@
         padding: .875em;
         
         a {
-            @include montserrat(.8125em, 700);
+            @include montserrat(.8125rem, 700);
 
             color: $neutral-color3;
             text-decoration: none;
+
+            &:focus {
+                outline: none;
+            }
         }
         
         i {
@@ -74,7 +78,7 @@
             vertical-align: middle;
         }
 
-        &:hover {
+        &:hover, &:focus {
             background: $hover-color;
         }
     }

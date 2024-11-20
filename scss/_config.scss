@@ -20,7 +20,7 @@ $hover-color: hsl(158, 36%, 20%);
 @mixin priceLayout(){
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 1.25em;
 }
 
 @mixin montserrat($size, $weight){

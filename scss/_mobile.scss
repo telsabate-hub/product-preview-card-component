@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .product {
         flex-direction: column;
         height: 100vh;
@@ -16,5 +16,9 @@
 
     .product-details {
         border-radius: 0 0 0.5rem 0.5rem;
+
+        &-description {
+            padding-right: 2.5em;
+        }
     }
 }
