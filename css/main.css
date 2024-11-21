@@ -67,21 +67,17 @@
   text-decoration: line-through;
 }
 .product-details .add-btn {
-  background: hsl(158, 36%, 37%);
-  text-align: center;
-  border-radius: 0.5em;
-  padding: 0.875em;
-}
-.product-details .add-btn a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: hsl(228, 12%, 48%);
   font-size: 0.8125rem;
+  background: hsl(158, 36%, 37%);
+  text-align: center;
+  border-radius: 0.5em;
+  padding: 0.875em;
+  border: none;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
-}
-.product-details .add-btn a:focus {
-  outline: none;
 }
 .product-details .add-btn i {
   padding-right: 0.625rem;
